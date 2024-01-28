@@ -48,12 +48,12 @@ section {
     min-height: 100vh;
     display: flex;
     align-items: center;
-    background: url(res/bg.jpg);
+    background: url(res/bg.png);
     background-size: cover;
     background-position: center;
 }
 
 .main h2 {
     font-size: 1.4em;
-    font-weight: 500;
+    font-weight: 500px;
 }

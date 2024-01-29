@@ -1,5 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
+:root {
+    --title: #ddd7d7;
+    --black-font: #1F201B;
+    --bg: #14286E;
+    --big-font: #4b84ce;
+}
+
 * {
     font-family: "Poppins", sans-serif;
     margin: 0;
@@ -9,7 +16,7 @@
 }
 
 header {
-    background-color: rgb(86, 122, 168);
+    background-color: var(--big-font);
     width: 100%;
     position: fixed;
     z-index: 99;
@@ -21,7 +28,7 @@ header {
 
 .logo {
     text-decoration: none;
-    color: rgb(70, 70, 70);
+    color: var(--title);
     text-transform: capitalize;
     font-weight: 700;
     font-size: 1.8em;
@@ -29,7 +36,7 @@ header {
 
 .navigation a {
     text-decoration: none;
-    color: rgb(80, 80, 80);
+    color: var(--title);
     font-size: 1.1em;
     font-weight: 500;
     padding-left: 30px  ;
@@ -44,18 +51,62 @@ section {
 }
 
 .main {
-    transform: translate(0px, 50px);
     width: 100%;
     min-height: 100vh;
     max-width: 100%;
     display: flex;
     align-items: center;
-    background: url(res/bg.png);
+    /*background: url(res/bg.png);*/
     background-size: cover;
     background-position: center;
+    background-image: linear-gradient(black, rgba(0, 0, 0, 0)), url(res/bg.jpg);
 }
 
 .main h2 {
     font-size: 1.4em;
     font-weight: 500px;
+    color: var(--title);
+}
+
+.main h2 span {
+    display: inline-block;
+    margin-top: 10px;
+    color: var(--big-font);
+    font-size: 3em;
+    font-weight: 600;
+}
+
+.main h3 {
+    color: var(--title);
+    font-size: 2em;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+.main-btn {
+    text-decoration: none;
+    color: white;
+    border-radius: 15px;
+    background-color: rgb(40, 100, 150);
+    font-size: 1.1em;
+    font-weight: 600;
+    display: inline-block;
+    padding: 0.9375em 2.1875em;
+    letter-spacing: 1px;
+    margin-bottom: 40px;
+    transition: 0.7s ease;
+}
+
+.main-btn:hover {
+    background-color: rgb(40, 50, 150);
+    transform: scale(1.1);
+}
+
+.social a {
+    text-decoration: none;
+    color: var(--title);
+    font-size: 1.7em;
+    padding-right: 30px;
 }

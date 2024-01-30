@@ -161,6 +161,12 @@ section {
 
 .icon {
     text-align: center;
+    color: var(--big-font);
+    font-size: 8em;
+}
+
+.info {
+    text-align: center;
 }
 
 .info h3 {
@@ -227,4 +233,9 @@ section {
 
 .more-det:hover {
     color: var(--black-font);
+}
+
+.contacts-info {
+    font-size: 1.5em;
+    word-wrap: break-word;
 }
